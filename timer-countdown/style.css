@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/img-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+span {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.box {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px gray;
+  letter-spacing: 5px;
+}
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 654px) {
+  .container{
+    margin: 0px;
+  }
+  .box {
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.6remrem;
+    text-shadow: 1px 1px 1px gray;
+    letter-spacing: 5px;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+  }
+  h3 {
+    font-size: 0.5rem;
+    text-shadow: 1px 1px 1px gray;
+    letter-spacing: 5px;
+  }
+   p {
+    font-size: 0.5rem;
+  }
+  h2 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
